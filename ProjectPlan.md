@@ -23,7 +23,8 @@
   - API 9: Manage Service Command → Truong Dang
   - API 10: Generate Usage Report Command → Truong Dang
 
-- Project Plan: https://github.com/VD-25/osiris-admin-portal/blob/main/ProjectPlan.md 
+- Project Plan: https://github.com/VD-25/osiris-admin-portal/blob/main/ProjectPlan.md
+- Kanban Board to keep track of *to-do*, *in-progress*, and *done* tasks: https://github.com/users/VD-25/projects/3
 
 Steps for each API: APIs are to be written in Node.js with starting base repo:
   - Team member needs to clone repo and and `npm init` a Node.js project
