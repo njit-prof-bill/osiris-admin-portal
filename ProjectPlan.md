@@ -1,4 +1,4 @@
-# Project Admin Portal Core Features
+# Project Admin Portal Core Features Plan
 
 > Team Diddy (14) - Daniel, Felix, Ricardo, [Truong Dang](https://github.com/truongd3), Vidhi\
 > Prof. McCann\
@@ -6,7 +6,7 @@
 > Fall 2024
 
 - Technologies used
-  - Node.js
+  - Python
   - JavaScript
   - GitHub
   - (We will update with more in the future)
