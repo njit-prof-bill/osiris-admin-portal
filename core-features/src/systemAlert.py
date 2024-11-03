@@ -1,4 +1,5 @@
-'''Problem: Implement the setSystemAlert API, which allows administrators to create a system-wide alert through the admin portal.
+'''
+Problem: Implement the setSystemAlert API, which allows administrators to create a system-wide alert through the admin portal.
 
 Type: Function
 
@@ -22,7 +23,8 @@ Sample Input:
 response = setSystemAlert("Database maintenance scheduled at 12:00 PM.", "high")
 Sample Output:
 
-response = True'''
+response = True
+'''
 
 def setSystemAlert(message: str, priority: str) -> bool:
     if priority != "low" or priority != "medium" or priority != "high":
