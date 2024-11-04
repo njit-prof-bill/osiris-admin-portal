@@ -1,5 +1,5 @@
 def setSystemAlert(message: str, priority: str) -> bool:
-    if priority != "low" and priority != "medium" and priority != "high":
+    if priority != "low" or priority != "medium" or priority != "high":
         return False
     if len(message) == 0:
         return False
