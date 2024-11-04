@@ -29,26 +29,45 @@ response = True
 #this list will prob be factored out into a shared date file in src/
 listOfUsers = []
 
-def addNewUser(username: str, email: str, role: str) -> bool:
+test1 = {
+    "username":"1n",
+    "email":"danie@test.com",
+    "role":"user"
+}
+test2 = {
+    "username":"2n",
+    "email":"d22222anie@test.com",
+    "role":"user"
+}
+test3 = {
+    "username":"3n",
+    "email":"danid@test.com",
+    "role":"usdddder"
+}
+listOfUsers.append(test1)
+listOfUsers.append(test3)
+listOfUsers.append(test2)
+
+def removeUser(username: str) -> bool:
 
     if not username:
-        return False
-    if not email:
-        return False
-    if not role:
+        print("no username give")
         return False
 
     global listOfUsers
-    userToAdd = {
-        username,
-        email,
-        role
-    }
-    listOfUsers.append(userToAdd)
-    return True
+    
+    for user in listOfUsers:
+        if username in user.values():
+            listOfUsers.remove(user)
+            print("user removed")
+            return True
+    
+    print("User not found")
+    return False
 
 
-addNewUser("1n","danie@test.com","user")
-addNewUser("n","d22222anie@test.com","user")
-addNewUser("n","danie@test.com","usdddder")
-print(listOfUsers[2])
+print(listOfUsers)
+
+removeUser("2n")
+print(listOfUsers)
+
