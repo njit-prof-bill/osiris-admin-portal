@@ -48,18 +48,21 @@ listOfUsers.append(test1)
 listOfUsers.append(test3)
 listOfUsers.append(test2)
 
-def removeUser(username: str) -> bool:
+def updateUserRole(username: str, role: str) -> bool:
 
     if not username:
         print("no username give")
+        return False
+    if not role:
+        print("no role given")
         return False
 
     global listOfUsers
     
     for user in listOfUsers:
         if username in user.values():
-            listOfUsers.remove(user)
-            print("user removed")
+            user["role"] = role
+            print("User Role Updated")
             return True
     
     print("User not found")
@@ -67,7 +70,6 @@ def removeUser(username: str) -> bool:
 
 
 print(listOfUsers)
-
-removeUser("2n")
+updateUserRole("2n","admin++++++++-------")
 print(listOfUsers)
 
