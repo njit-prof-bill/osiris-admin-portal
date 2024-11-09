@@ -52,7 +52,7 @@ def viewSystemStatus():
     return status
 '''
 
-#code without implementing - uses dummy code
+#code without implementing - uses dummy code instead of fetching data   
 def viewSystemStatus():
     status = {
     "cpu_usage": "68%",
