@@ -32,10 +32,10 @@ status = {
 '''
 
 import psutil
-
+'''code to implement and retrive system metrics - not used
 #retrieve system metrics: cpu usage as a %, memory usage as a %
 cpu_usage = psutil.cpu_percent(interval=1)
-memory_usage = psutil.virtual_memory([2])
+memory_usage = psutil.virtual_memory()
 
 #make list of active services by iterating through and storing process name
 services_list = []
@@ -50,3 +50,18 @@ def viewSystemStatus():
     "alerts": []
     }
     return status
+'''
+
+#code without implementing - uses dummy code
+def viewSystemStatus():
+    status = {
+    "cpu_usage": "68%",
+    "memory_usage": "82.3%",
+    "active_services": ["chrome.exe", "bash.exe", "slack.exe"],
+    "alerts": []
+}
+    return status
+
+#test case:
+status = viewSystemStatus()
+print(status)
