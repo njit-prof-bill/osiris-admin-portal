@@ -1,0 +1,21 @@
+setting,value
+api_rate_limit,100
+session_timeout,1900
+max_login_attempts,5
+password_min_length,8
+enable_two_factor_authentication,True
+default_user_role,'user'
+maintenance_mode,False
+email_verification_required,True
+max_file_upload_size,50
+data_retention_period,365
+log_level,'INFO'
+allowed_file_types,"['jpg', 'png', 'pdf', 'docx']"
+default_timezone,'UTC'
+backup_frequency,'daily'
+idle_user_timeout,900
+enable_api_logging,True
+password_expiration_days,90
+max_active_sessions_per_user,3
+allow_user_registration,True
+notification_email,'admin@osirisplatform.com'
