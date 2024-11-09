@@ -62,6 +62,6 @@ def viewSystemStatus():
 }
     return status
 
-#test case:
+#test  case:
 status = viewSystemStatus()
 print(status)
